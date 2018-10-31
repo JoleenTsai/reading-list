@@ -21,7 +21,7 @@ const Form = props =>
         <input type="text" className="form-control" id="bookCurrent" placeholder="43" />
       </div>
       <div className="form-check">
-        <input className="form-check-input" type="radio" id="bookIsRead" checked={!!props.isRead} />
+        <input className="form-check-input" type="radio" id="bookIsRead" checked={props.isRead} />
         <label className="form-check-label" htmlFor="bookIsRead"> Read this Book Before</label>
       </div>
       <hr className="my-2" />

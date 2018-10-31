@@ -1,7 +1,7 @@
 const React = require('react')
 const Form = require('./form')
 
-const BookInfo = props =>
+const BookAdd = props =>
   <html lang="en">
     <head>
       <meta charSet="UTF-8" />
@@ -17,7 +17,6 @@ const BookInfo = props =>
           <p className="lead">Complete the form below to add your book!</p>
           <hr className="my-2" />
           <Form title={props.title} author={props.author} pages={props.pages} currentPage={props.currentPage} isRead={props.isRead} />
-        </div>
       </div>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossOrigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossOrigin="anonymous"></script>
@@ -26,4 +25,4 @@ const BookInfo = props =>
     </body>
   </html>
 
-module.exports = BookInput
+module.exports = BookAdd

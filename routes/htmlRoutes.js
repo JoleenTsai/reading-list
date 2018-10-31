@@ -5,5 +5,7 @@ module.exports = app => {
    res.render('index')
   })
   app.get('/list', (req, res) => res.render('list', {list: books.getBooks()}))
-  app.get('/bookResult', (req, res) => res.render('bookInput', {list: books.getBook()}))
+  app.get('/bookResult', (req, res) => {
+    res.render('bookResult', books.getBook())
+})
 }

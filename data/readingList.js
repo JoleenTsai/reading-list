@@ -17,6 +17,6 @@ module.exports = {
   },
   updateBook (id, book) {
     let index = books.findIndex(bookInfo => bookInfo.id === id)
-    books.splice(index, 1)
+    books.splice(index, 0)
   }
 }
